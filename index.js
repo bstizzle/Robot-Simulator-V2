@@ -29,6 +29,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const moveButton = document.querySelector("#move-button");
 
+  moveButton.addEventListener("click", function(){
+    let direction = ul.firstElementChild.innerText;
+    move(direction);
+    ul.firstElementChild.remove();
+  });
 
-  
 });
